@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset ="UTF-8">
+  <title></title>
+</head>
+<body data-ng-app="beveragesApp">
+  <a data-ng-if="loggedIn()" href data-ng-click="logOut()">LogOut{{username? ' of ' + username : ''}}</a>
+  <h1>Inside the App</h1>
+  <main data-ng-view>
+  </main>
+    <script src="bundle.js"></script>
+</body>
+</html>
